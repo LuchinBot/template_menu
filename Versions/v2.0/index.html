@@ -8,26 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Filter con Carrusel -->
+    <!-- Navigation Filter -->
     <nav class="filter-nav sticky-top">
         <div class="container">
-            <div class="filter-container">
-                <button class="carousel-nav prev" id="scrollLeft">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <div class="filter-wrapper" id="filterWrapper">
-                    <button class="btn btn-filter active" data-filter="all">Todo</button>
-                    <button class="btn btn-filter" data-filter="bebidas">Bebidas</button>
-                    <button class="btn btn-filter" data-filter="alimentos">Alimentos</button>
-                    <button class="btn btn-filter" data-filter="postres">Postres</button>
-                </div>
-                <button class="carousel-nav next" id="scrollRight">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+            <div class="filter-wrapper">
+                <button class="btn btn-filter active" data-filter="all">Todo</button>
+                <button class="btn btn-filter" data-filter="bebidas">Bebidas</button>
+                <button class="btn btn-filter" data-filter="alimentos">Alimentos</button>
+                <button class="btn btn-filter" data-filter="postres">Postres</button>
             </div>
         </div>
     </nav>
@@ -42,7 +30,7 @@
                     <div class="line-header-content">
                         <h2 class="line-title">Bebidas</h2>
                         <button class="btn-collapse" data-target="line-bebidas">
-                            <span class="collapse-icon"></span>
+                            <span class="collapse-icon">−</span>
                         </button>
                     </div>
                 </div>
@@ -53,7 +41,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Licores Premium</h3>
                             <button class="btn-collapse-category" data-target="category-licores">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -66,6 +54,7 @@
                                             <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400" 
                                                  alt="Johnnie Walker Black Label" 
                                                  class="product-image">
+                                            <div class="product-badge">Premium</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Johnnie Walker</div>
@@ -98,6 +87,7 @@
                                             <img src="https://images.unsplash.com/photo-1560508020-27e2c9ae3f14?w=400" 
                                                  alt="Bacardi Reserva Ocho" 
                                                  class="product-image">
+                                            <div class="product-badge">Nuevo</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Bacardi</div>
@@ -115,7 +105,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Cervezas</h3>
                             <button class="btn-collapse-category" data-target="category-cervezas">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -161,7 +151,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Vinos</h3>
                             <button class="btn-collapse-category" data-target="category-vinos">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -174,6 +164,7 @@
                                             <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400" 
                                                  alt="Casillero del Diablo" 
                                                  class="product-image">
+                                            <div class="product-badge">Recomendado</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Casillero del Diablo</div>
@@ -195,7 +186,7 @@
                     <div class="line-header-content">
                         <h2 class="line-title">Alimentos</h2>
                         <button class="btn-collapse" data-target="line-alimentos">
-                            <span class="collapse-icon"></span>
+                            <span class="collapse-icon">−</span>
                         </button>
                     </div>
                 </div>
@@ -206,7 +197,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Snacks</h3>
                             <button class="btn-collapse-category" data-target="category-snacks">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -235,6 +226,7 @@
                                             <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400" 
                                                  alt="Papas Artesanales" 
                                                  class="product-image">
+                                            <div class="product-badge">Nuevo</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Gourmet</div>
@@ -252,7 +244,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Entradas</h3>
                             <button class="btn-collapse-category" data-target="category-entradas">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -265,6 +257,7 @@
                                             <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400" 
                                                  alt="Tabla de Quesos" 
                                                  class="product-image">
+                                            <div class="product-badge">Popular</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Chef Special</div>
@@ -286,7 +279,7 @@
                     <div class="line-header-content">
                         <h2 class="line-title">Postres</h2>
                         <button class="btn-collapse" data-target="line-postres">
-                            <span class="collapse-icon"></span>
+                            <span class="collapse-icon">−</span>
                         </button>
                     </div>
                 </div>
@@ -297,7 +290,7 @@
                         <div class="category-header">
                             <h3 class="category-title">Repostería</h3>
                             <button class="btn-collapse-category" data-target="category-reposteria">
-                                <span class="collapse-icon"></span>
+                                <span class="collapse-icon">−</span>
                             </button>
                         </div>
                         
@@ -310,6 +303,7 @@
                                             <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=400" 
                                                  alt="Cheesecake" 
                                                  class="product-image">
+                                            <div class="product-badge">Especial</div>
                                         </div>
                                         <div class="product-body">
                                             <div class="product-brand">Dulce Arte</div>
@@ -343,13 +337,6 @@
 
         </div>
     </main>
-
-    <!-- Botón Volver Arriba -->
-    <button class="scroll-to-top" id="scrollToTop">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </button>
 
     <!-- Footer -->
     <footer class="footer-section">
