@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Digital</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation Filter con Carrusel -->
     <nav class="filter-nav sticky-top">
-        <div class="container">
+        <div class="container p-0">
             <div class="filter-container">
                 <button class="carousel-nav prev" id="scrollLeft">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <div class="filter-wrapper" id="filterWrapper">
@@ -25,7 +33,8 @@
                 </div>
                 <button class="carousel-nav next" id="scrollRight">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
             </div>
@@ -34,153 +43,184 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container py-5">
-            
-            <!-- Línea: Bebidas -->
-            <section class="line-section mb-5" data-line="bebidas">
-                <div class="line-header mb-4">
-                    <div class="line-header-content">
-                        <h2 class="line-title">Bebidas</h2>
-                        <button class="btn-collapse" data-target="line-bebidas">
-                            <span class="collapse-icon"></span>
-                        </button>
-                    </div>
-                </div>
+        <div class="container-custom py-3">
 
+            <!-- Línea: Bebidas -->
+            <section class="line-section mb-3" data-line="bebidas">
                 <div id="line-bebidas" class="line-content">
                     <!-- Categoría: Licores Premium -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
+                    <div class="category-section mb-3">
+                        <div class="category-header"
+                            style="background-image: url('https://pedidosya.dhmedia.io/image/pedidosya/profile-headers/licores-express-quito-header.jpg?quality=70&width=414');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
                             <h3 class="category-title">Licores Premium</h3>
                             <button class="btn-collapse-category" data-target="category-licores">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
                         <div id="category-licores" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 1 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400" 
-                                                 alt="Johnnie Walker Black Label" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Johnnie Walker</div>
-                                            <h4 class="product-name">Black Label 750 ML</h4>
-                                            <p class="product-description">Johnnie Walker Black Label es una mezcla maestra elaborada con whiskies madurados durante al menos 12 años de las cuatro regiones principales de Escocia</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400"
+                                            alt="Johnnie Walker Black Label"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Johnnie Walker</div>
+                                        <h4 class="product-item-name">Black Label 750 ML</h4>
+                                        <p class="product-item-description">Johnnie Walker Black Label es una mezcla
+                                            maestra elaborada con whiskies madurados durante al menos 12 años de las
+                                            cuatro regiones principales de Escocia</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 189.90</div>
                                 </div>
 
                                 <!-- Producto 2 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400" 
-                                                 alt="Chivas Regal" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Chivas Regal</div>
-                                            <h4 class="product-name">12 Años 750 ML</h4>
-                                            <p class="product-description">Un whisky escocés mezclado suave y sofisticado con notas de miel, vainilla y manzanas maduras</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400"
+                                            alt="Chivas Regal"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Chivas Regal</div>
+                                        <h4 class="product-item-name">12 Años 750 ML</h4>
+                                        <p class="product-item-description">Un whisky escocés mezclado suave y
+                                            sofisticado con notas de miel, vainilla y manzanas maduras</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 169.90</div>
+                                </div>
+                                <!-- Producto 1 -->
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400"
+                                            alt="Johnnie Walker Black Label"
+                                            class="product-image">
+                                    </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Johnnie Walker</div>
+                                        <h4 class="product-item-name">Black Label 750 ML</h4>
+                                        <p class="product-item-description">Johnnie Walker Black Label es una mezcla
+                                            maestra elaborada con whiskies madurados durante al menos 12 años de las
+                                            cuatro regiones principales de Escocia</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 189.90</div>
                                 </div>
 
-                                <!-- Producto 3 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1560508020-27e2c9ae3f14?w=400" 
-                                                 alt="Bacardi Reserva Ocho" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Bacardi</div>
-                                            <h4 class="product-name">Reserva Ocho 750 ML</h4>
-                                            <p class="product-description">Ron dorado premium envejecido bajo el sol del Caribe durante un mínimo de ocho años</p>
-                                        </div>
+                                <!-- Producto 2 -->
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400"
+                                            alt="Chivas Regal"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Chivas Regal</div>
+                                        <h4 class="product-item-name">12 Años 750 ML</h4>
+                                        <p class="product-item-description">Un whisky escocés mezclado suave y
+                                            sofisticado con notas de miel, vainilla y manzanas maduras</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 169.90</div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
                     <!-- Categoría: Cervezas -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
+                    <div class="category-section mb-3">
+                        <div class="category-header"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsxQPPMLKtIRWH3tJW0WCRzkfx9ajlOf1ABQ&s');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
                             <h3 class="category-title">Cervezas</h3>
                             <button class="btn-collapse-category" data-target="category-cervezas">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
                         <div id="category-cervezas" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 4 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400" 
-                                                 alt="Corona Extra" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Corona</div>
-                                            <h4 class="product-name">Extra 355 ML</h4>
-                                            <p class="product-description">Cerveza lager mexicana de sabor ligero y refrescante, perfecta para cualquier ocasión</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400"
+                                            alt="Corona Extra"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Corona</div>
+                                        <h4 class="product-item-name">Extra 355 ML</h4>
+                                        <p class="product-item-description">Cerveza lager mexicana de sabor ligero y
+                                            refrescante, perfecta para cualquier ocasión</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 12.90</div>
                                 </div>
 
                                 <!-- Producto 5 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1618885472179-5e474019f2a9?w=400" 
-                                                 alt="Heineken" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Heineken</div>
-                                            <h4 class="product-name">Lager 330 ML</h4>
-                                            <p class="product-description">Cerveza premium con un sabor equilibrado y refrescante, reconocida mundialmente</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1618885472179-5e474019f2a9?w=400"
+                                            alt="Heineken"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Heineken</div>
+                                        <h4 class="product-item-name">Lager 330 ML</h4>
+                                        <p class="product-item-description">Cerveza premium con un sabor equilibrado y
+                                            refrescante, reconocida mundialmente</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 13.90</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Categoría: Vinos -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
+                    <div class="category-section mb-3">
+                        <div class="category-header"
+                            style="background-image: url('https://i0.wp.com/placeres.pe/wp-content/uploads/2025/07/header-car.png?fit=1920%2C1080&ssl=1');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
                             <h3 class="category-title">Vinos</h3>
                             <button class="btn-collapse-category" data-target="category-vinos">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
+
                         <div id="category-vinos" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 6 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400" 
-                                                 alt="Casillero del Diablo" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Casillero del Diablo</div>
-                                            <h4 class="product-name">Cabernet Sauvignon 750 ML</h4>
-                                            <p class="product-description">Vino tinto chileno con cuerpo medio, notas de frutas rojas y un final suave</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400"
+                                            alt="Casillero del Diablo"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Casillero del Diablo</div>
+                                        <h4 class="product-item-name">Cabernet Sauvignon 750 ML</h4>
+                                        <p class="product-item-description">Vino tinto chileno con cuerpo medio, notas
+                                            de frutas rojas y un final suave</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 45.90</div>
                                 </div>
                             </div>
                         </div>
@@ -190,88 +230,95 @@
             </section>
 
             <!-- Línea: Alimentos -->
-            <section class="line-section mb-5" data-line="alimentos">
-                <div class="line-header mb-4">
-                    <div class="line-header-content">
-                        <h2 class="line-title">Alimentos</h2>
-                        <button class="btn-collapse" data-target="line-alimentos">
-                            <span class="collapse-icon"></span>
-                        </button>
-                    </div>
-                </div>
-
+            <section class="line-section mb-3" data-line="alimentos">
                 <div id="line-alimentos" class="line-content">
                     <!-- Categoría: Snacks -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
+                    <div class="category-section mb-3">
+                       <div class="category-header"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlf7z2bl-Ll2snFH_YslsFGqUVGMbjRV32nA&s');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
                             <h3 class="category-title">Snacks</h3>
                             <button class="btn-collapse-category" data-target="category-snacks">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
+
                         <div id="category-snacks" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 7 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400" 
-                                                 alt="Mix de Frutos Secos" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Premium Snacks</div>
-                                            <h4 class="product-name">Mix de Frutos Secos</h4>
-                                            <p class="product-description">Selección premium de almendras, nueces y pistachos perfectamente tostados</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400"
+                                            alt="Mix de Frutos Secos"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Premium Snacks</div>
+                                        <h4 class="product-item-name">Mix de Frutos Secos</h4>
+                                        <p class="product-item-description">Selección premium de almendras, nueces y
+                                            pistachos perfectamente tostados</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 24.90</div>
                                 </div>
 
                                 <!-- Producto 8 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400" 
-                                                 alt="Papas Artesanales" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Gourmet</div>
-                                            <h4 class="product-name">Papas Artesanales 200g</h4>
-                                            <p class="product-description">Papas fritas artesanales con sal marina y hierbas naturales</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400"
+                                            alt="Papas Artesanales"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Gourmet</div>
+                                        <h4 class="product-item-name">Papas Artesanales 200g</h4>
+                                        <p class="product-item-description">Papas fritas artesanales con sal marina y
+                                            hierbas naturales</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 18.90</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Categoría: Entradas -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
+                    <div class="category-section mb-3">
+                       <div class="category-header"
+                            style="background-image: url('https://www.ajinomoto.com.pe:8085/img/noticia/Sopas-nutritivas-portada.jpg');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
                             <h3 class="category-title">Entradas</h3>
                             <button class="btn-collapse-category" data-target="category-entradas">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
+
                         <div id="category-entradas" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 9 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400" 
-                                                 alt="Tabla de Quesos" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Chef Special</div>
-                                            <h4 class="product-name">Tabla de Quesos</h4>
-                                            <p class="product-description">Selección de quesos artesanales acompañados de mermeladas y frutos secos</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400"
+                                            alt="Tabla de Quesos"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Chef Special</div>
+                                        <h4 class="product-item-name">Tabla de Quesos</h4>
+                                        <p class="product-item-description">Selección de quesos artesanales acompañados
+                                            de mermeladas y frutos secos</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 42.90</div>
                                 </div>
                             </div>
                         </div>
@@ -281,58 +328,56 @@
             </section>
 
             <!-- Línea: Postres -->
-            <section class="line-section mb-5" data-line="postres">
-                <div class="line-header mb-4">
-                    <div class="line-header-content">
-                        <h2 class="line-title">Postres</h2>
-                        <button class="btn-collapse" data-target="line-postres">
-                            <span class="collapse-icon"></span>
-                        </button>
-                    </div>
-                </div>
-
+            <section class="line-section mb-3" data-line="postres">
                 <div id="line-postres" class="line-content">
                     <!-- Categoría: Repostería -->
-                    <div class="category-section mb-5">
-                        <div class="category-header">
-                            <h3 class="category-title">Repostería</h3>
+                    <div class="category-section mb-3">
+                       <div class="category-header"
+                            style="background-image: url('https://granvita.com/wp-content/uploads/2020/12/Header_postres_navidenos_avena.jpg');">
+                            <div class="overlay"></div>
+                            <div class="overlay-bottom"></div>
+                            <h3 class="category-title">Reposteria</h3>
                             <button class="btn-collapse-category" data-target="category-reposteria">
-                                <span class="collapse-icon"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="white" class="collapse-icon size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </button>
                         </div>
-                        
+
                         <div id="category-reposteria" class="category-content">
-                            <div class="row">
+                            <div class="products-grid">
                                 <!-- Producto 10 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=400" 
-                                                 alt="Cheesecake" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Dulce Arte</div>
-                                            <h4 class="product-name">Cheesecake de Frutos Rojos</h4>
-                                            <p class="product-description">Delicioso cheesecake cremoso con coulis de frutos rojos naturales</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=400"
+                                            alt="Cheesecake"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Dulce Arte</div>
+                                        <h4 class="product-item-name">Cheesecake de Frutos Rojos</h4>
+                                        <p class="product-item-description">Delicioso cheesecake cremoso con coulis de
+                                            frutos rojos naturales</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 28.90</div>
                                 </div>
 
                                 <!-- Producto 11 -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                                    <div class="product-card">
-                                        <div class="product-image-container">
-                                            <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=400" 
-                                                 alt="Brownie" 
-                                                 class="product-image">
-                                        </div>
-                                        <div class="product-body">
-                                            <div class="product-brand">Dulce Arte</div>
-                                            <h4 class="product-name">Brownie con Helado</h4>
-                                            <p class="product-description">Brownie de chocolate caliente con helado de vainilla y salsa de chocolate</p>
-                                        </div>
+                                <div class="product-item">
+                                    <div class="product-item-image">
+                                        <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=400"
+                                            alt="Brownie"
+                                            class="product-image">
                                     </div>
+                                    <div class="product-item-info">
+                                        <div class="product-item-brand">Dulce Arte</div>
+                                        <h4 class="product-item-name">Brownie con Helado</h4>
+                                        <p class="product-item-description">Brownie de chocolate caliente con helado de
+                                            vainilla y salsa de chocolate</p>
+                                    </div>
+                                    <div class="product-item-price">S/ 24.90</div>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +392,8 @@
     <!-- Botón Volver Arriba -->
     <button class="scroll-to-top" id="scrollToTop">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
         </svg>
     </button>
 
@@ -364,4 +410,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
+
 </html>
