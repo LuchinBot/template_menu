@@ -134,10 +134,6 @@ button {
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .app-header::before {
@@ -151,155 +147,27 @@ button {
     opacity: 0.3;
 }
 
-/* ===================================
-   Contenido del Splash
-   =================================== */
-.splash-content {
+.header-content {
     position: relative;
-    z-index: 2;
-    text-align: center;
-    animation: fadeInUp 1.2s ease;
+    z-index: 1;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===================================
-   Logo Container
-   =================================== */
-.logo-container {
-    margin-bottom: 3rem;
-    animation: logoEntrance 1.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes logoEntrance {
-    0% {
-        opacity: 0;
-        transform: scale(0.5) rotate(-10deg);
-    }
-    60% {
-        transform: scale(1.1) rotate(5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-.main-logo {
-    width: clamp(180px, 40vw, 320px);
-    height: auto;
-    filter: drop-shadow(0 10px 40px rgba(212, 175, 55, 0.4));
-    animation: floatLogo 3s ease-in-out infinite;
-}
-
-@keyframes floatLogo {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-.logo-container:hover .main-logo {
-    filter: drop-shadow(0 15px 50px rgba(212, 175, 55, 0.6));
-    transform: scale(1.05);
-    transition: all 0.4s ease;
-}
-
-/* ===================================
-   Texto de Bienvenida
-   =================================== */
-.welcome-text {
-    animation: fadeInUp 1.5s ease 0.3s backwards;
-}
-
-.brand-name {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+.restaurant-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
-    color: var(--gold-primary);
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+    color: #ffffff;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -1px;
 }
 
-.brand-subtitle {
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    color: var(--text-white);
-    margin-bottom: 2rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+.restaurant-tagline {
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
-    opacity: 0.9;
-}
-
-.decorative-line {
-    width: 120px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, var(--gold-primary) 50%, transparent 100%);
-    margin: 0 auto;
-    animation: lineExpand 1.5s ease 0.6s backwards;
-}
-
-@keyframes lineExpand {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-    to {
-        width: 120px;
-        opacity: 1;
-    }
-}
-
-/* ===================================
-   Botón de Entrada
-   =================================== */
-.enter-button {
-    margin-top: 3rem;
-    padding: 1rem 3rem;
-    background: linear-gradient(135deg, #ffffff 0%, #B8941F 100%);
-    color: var(--black-bg);
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
-    animation: fadeInUp 1.8s ease 0.6s backwards;
-}
-
-.enter-button:hover {
-    background: linear-gradient(135deg, #F4E4C1 0%, var(--gold-primary) 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
-}
-
-.enter-button:active {
-    transform: translateY(-1px);
-}
-
-.enter-button svg {
-    transition: transform 0.3s ease;
-}
-
-.enter-button:hover svg {
-    transform: translateX(5px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* ===================================

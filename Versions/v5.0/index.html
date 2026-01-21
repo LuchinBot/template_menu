@@ -6,26 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#161d30">
     <title>Menú Digital Elegante</title>
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    
     <!-- Google Fonts - Recomendación Premium -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Opción 1: Elegante y Profesional (RECOMENDADA) -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Opción 2: Moderna y Sofisticada -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
-
+    
     <!-- Opción 3: Casual y Contemporánea -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
-
+    
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="splash-styles.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -33,22 +30,11 @@
     <!-- Header con Logo (Opcional - para Laravel Blade) -->
     <header class="app-header">
         <div class="container-custom">
-            <div class="splash-content">
-                <!-- Logo Container -->
-                <div class="logo-container">
-                    <img src="src/logo.png" alt="Lung Fung Logo" class="main-logo">
-                </div>
-
-                <!-- Botón de entrada -->
-                <a href="#filterNav" class="enter-button" id="enterButton">
-                    <span>Explorar Menú</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </a>
+            <div class="header-content">
+                <h1 class="restaurant-name">Menú Digital</h1>
+                <p class="restaurant-tagline">Experiencia Gastronómica Premium</p>
             </div>
-        </div>
+        </div>  
     </header>
 
     <!-- Navigation Filter - Sticky -->
@@ -57,22 +43,20 @@
             <div class="filter-container">
                 <button class="carousel-nav prev" id="scrollLeft" aria-label="Scroll izquierda">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M12 16L6 10L12 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                        <path d="M12 16L6 10L12 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-
+                
                 <div class="filter-wrapper" id="filterWrapper">
                     <button class="btn-filter active" data-filter="all">Todo</button>
                     <button class="btn-filter" data-filter="bebidas">Bebidas</button>
                     <button class="btn-filter" data-filter="alimentos">Alimentos</button>
                     <button class="btn-filter" data-filter="postres">Postres</button>
                 </div>
-
+                
                 <button class="carousel-nav next" id="scrollRight" aria-label="Scroll derecha">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                        <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
             </div>
@@ -81,29 +65,28 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container-custom py-4">
+        <div class="container-custom py-4">            
             <!-- Línea: Bebidas -->
             <section class="line-section" data-line="bebidas">
                 <div class="line-header">
                     <h2 class="line-title">Bebidas</h2>
                     <div class="line-divider"></div>
                 </div>
-
+                
                 <div class="line-content">
-
+                    
                     <!-- Categoría: Licores Premium (Imagen a la DERECHA) -->
                     <div class="category-card category-right">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&q=80"
-                                    alt="Licores Premium" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&q=80" alt="Licores Premium" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Licores Premium</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Black Label 750 ML</span>
@@ -134,15 +117,14 @@
                     <div class="category-card category-left">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80"
-                                    alt="Cervezas" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80" alt="Cervezas" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Cervezas</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Corona Extra 355 ML</span>
@@ -168,15 +150,14 @@
                     <div class="category-card category-right">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80"
-                                    alt="Vinos" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Vinos" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Vinos</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Casillero del Diablo Cabernet Sauvignon 750 ML</span>
@@ -207,22 +188,21 @@
                     <h2 class="line-title">Alimentos</h2>
                     <div class="line-divider"></div>
                 </div>
-
+                
                 <div class="line-content">
-
+                    
                     <!-- Categoría: Snacks (Imagen a la IZQUIERDA) -->
                     <div class="category-card category-left">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=800&q=80"
-                                    alt="Snacks" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=800&q=80" alt="Snacks" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Snacks</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Mix de Frutos Secos Premium</span>
@@ -248,15 +228,14 @@
                     <div class="category-card category-right">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80"
-                                    alt="Entradas" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80" alt="Entradas" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Entradas</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Tabla de Quesos Artesanales</span>
@@ -282,15 +261,14 @@
                     <div class="category-card category-left">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80"
-                                    alt="Platos Principales" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Platos Principales" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Platos Principales</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Lomo Saltado Tradicional</span>
@@ -321,22 +299,21 @@
                     <h2 class="line-title">Postres</h2>
                     <div class="line-divider"></div>
                 </div>
-
+                
                 <div class="line-content">
-
+                    
                     <!-- Categoría: Repostería (Imagen a la DERECHA) -->
                     <div class="category-card category-right">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=800&q=80"
-                                    alt="Repostería" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?w=800&q=80" alt="Repostería" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Repostería</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Cheesecake de Frutos Rojos</span>
@@ -367,15 +344,14 @@
                     <div class="category-card category-left">
                         <div class="category-content-wrapper">
                             <div class="category-image">
-                                <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&q=80"
-                                    alt="Helados" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&q=80" alt="Helados" loading="lazy">
                                 <div class="image-overlay"></div>
                             </div>
-
+                            
                             <div class="category-info">
                                 <h3 class="category-name">Helados Artesanales</h3>
                                 <div class="category-divider"></div>
-
+                                
                                 <div class="products-list">
                                     <div class="product-row">
                                         <span class="product-name">Copa de Helado (3 bolas)</span>
@@ -406,8 +382,7 @@
     <!-- Botón Volver Arriba -->
     <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round" />
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     </button>
 
